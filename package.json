@@ -1,0 +1,22 @@
+{
+  "name": "ipv4-lpm-backend",
+  "version": "1.0.0",
+  "description": "离线 IPv4 最长前缀匹配与下一跳选择 API/CLI",
+  "main": "dist/index.js",
+  "bin": {
+    "ipv4-lpm": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test dist/__tests__/ipv4.test.js dist/__tests__/trie.test.js dist/__tests__/service.test.js",
+    "start": "node dist/cli.js serve",
+    "demo": "npm run build && node dist/demo.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "typescript": "^5.9.0"
+  }
+}
