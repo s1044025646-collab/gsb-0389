@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "rewriteRelativeImportExtensions": true,
+    "outDir": "dist",
+    "rootDir": ".",
+    "declaration": false,
+    "sourceMap": false,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+    ,"types": ["node"]
+  },
+  "include": ["src/**/*.ts", "test/**/*.ts", "demo.ts"]
+}

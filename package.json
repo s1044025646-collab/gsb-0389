@@ -1,0 +1,23 @@
+{
+  "name": "ipv4-longest-prefix-lab",
+  "version": "1.0.0",
+  "description": "完全离线的 IPv4 路由最长前缀匹配与下一跳选择后端（TypeScript + Node.js + SQLite，仅 API 与 CLI）",
+  "type": "module",
+  "main": "dist/src/cli.js",
+  "bin": {
+    "route-lab": "dist/src/cli.js"
+  },
+  "scripts": {
+    "build": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\" && tsc -p tsconfig.json",
+    "start": "node --no-warnings dist/src/cli.js serve",
+    "demo": "node --no-warnings dist/src/cli.js demo",
+    "test": "node --no-warnings --experimental-strip-types --test test/*.test.ts"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "typescript": "^5.9.0"
+  }
+}

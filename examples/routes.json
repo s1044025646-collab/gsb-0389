@@ -1,0 +1,6 @@
+[
+  { "id": "default", "cidr": "0.0.0.0/0", "metric": 100, "action": "forward", "nextHop": "192.0.2.1" },
+  { "id": "p8", "cidr": "10.0.0.0/8", "metric": 50, "action": "forward", "nextHop": "192.0.2.10" },
+  { "id": "p16", "cidr": "10.1.0.0/16", "metric": 20, "action": "forward", "nextHop": "192.0.2.11" },
+  { "id": "block24", "cidr": "10.1.2.0/24", "metric": 0, "action": "drop", "nextHop": null }
+]
